@@ -55,6 +55,8 @@ from bs4 import BeautifulSoup
 # future versions will pull this from Firestore
 
 profile_urls = [
+'https://www.cloudskillsboost.google/public_profiles/e8aeb016-c0b6-458a-be24-9906dc5c5ab4', # mim
+
 'https://www.cloudskillsboost.google/public_profiles/13d2fc34-8aff-44b4-adcc-77032ccf8cb2',
 'https://www.cloudskillsboost.google/public_profiles/e770c4c3-5a42-495c-80cf-f9db5b4371e4',
 'https://www.cloudskillsboost.google/public_profiles/1978d95d-b6af-4a61-9961-761e2f7cd45f',
@@ -207,7 +209,7 @@ This is a sample of the **badgeconfig.json** structure:
 
 - After making the required changes, build the Flutter Web app by running ```flutter build web```.
 - A web app package gets generated in the ```/build/web``` folder, which you can use then to deploy to any web server of your choice. I like using **Firebase Hosting** as it provides a custom domain, SSL by default and works well with Flutter. But you can even host it on Github Pages or anywhere else.
-
+- You can run the project locally by running this command in the `./build/web` directory: `npx http-server -o .`
 ## STEP 4: Enjoy tracking the badges earned with your community!
 
 ### Please submit any feedbacks / bugs by submitting an issue to this repo and I'll get to it as fast as humanly possible.
