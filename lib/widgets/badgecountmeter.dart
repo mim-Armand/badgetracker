@@ -54,7 +54,7 @@ class BadgeCountMeter extends StatelessWidget {
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Utils.mainYellow.withOpacity(0.2),
+                        color: Utils.mainYellow.withOpacity(0.3),
                         borderRadius: BorderRadius.circular(100),
                       ),
                       height: 50,
@@ -63,7 +63,7 @@ class BadgeCountMeter extends StatelessWidget {
                         builder: (context, constraints) {
                           return Stack(
                             children: [
-                            service.bagdeholderList.isEmpty ? const SizedBox() : 
+                            service.bagdeholderList.isEmpty ? const SizedBox() :
                             AnimatedContainer(
                               duration: const Duration(seconds: 2),
                               curve: Curves.easeInOut,

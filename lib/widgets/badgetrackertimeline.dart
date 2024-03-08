@@ -58,11 +58,11 @@ class _BadgeTrackerTimelineState extends State<BadgeTrackerTimeline> with Single
                       }
                     )
                   ),
-          
+
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: List.generate(defaultSessions.length, (index) {
-                      
+
                       return Container(
                         width: 100,
                         alignment: Alignment.topCenter,
@@ -77,13 +77,13 @@ class _BadgeTrackerTimelineState extends State<BadgeTrackerTimeline> with Single
                       );
                     }),
                   ),
-          
+
                   Container(
                     margin: const EdgeInsets.only(top: 18, left: 50, right: 50),
                     height: 10,
                     child: LayoutBuilder(
                       builder: (context, constraints) {
-          
+
                         if (sessionService.getCompletedSessions() > 1) {
                           Future.delayed(const Duration(milliseconds: 500), () {
                             setState(() {
@@ -91,7 +91,7 @@ class _BadgeTrackerTimelineState extends State<BadgeTrackerTimeline> with Single
                             });
                           });
                         }
-          
+
                         return AnimatedContainer(
                           duration: const Duration(seconds: 2),
                           curve: Curves.easeInOut,
@@ -104,14 +104,60 @@ class _BadgeTrackerTimelineState extends State<BadgeTrackerTimeline> with Single
                       }
                     )
                   ),
-          
+
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: List.generate(defaultSessions.length, (index) {
-                      
+
                       double interval = 0.10;
                       Session currentSession = defaultSessions[index];
-                      
+
+                      return GestureDetector(
+                        onTap: () {
+                          Utils.launchUrlLink(currentSession.event);
+                        },
+                        child: MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: SizedBox(
+                          width: 100,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              ScaleTransition(
+                                scale: Tween<double>(
+                                    begin: 0.0,
+                                    end: 1.0
+                                ).animate(CurvedAnimation(
+                                    parent: stepCircleCtrl,
+                                    curve: Interval(interval * (index), (interval * (index + 1)) - 0.05, curve: Curves.easeInOut)
+                                )
+                                ),
+                                child: Container(
+                                  width: 25,
+                                  height: 25,
+                                  margin: const EdgeInsets.all(10),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(20),
+                                      color: currentSession.isComplete ? Utils.mainGreen : Utils.mainGreen.withOpacity(0.3)
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              Text('Session ${currentSession.index + 1}', textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      color: currentSession.isComplete ? Utils.mainGreen : Utils.lightGrey,
+                                      fontSize: 15, fontWeight: FontWeight.bold)
+                              ),
+                              Text(
+                                  DateFormat.MMMd().format(DateTime.parse(currentSession.date)), textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      color: currentSession.isComplete ? Utils.darkGrey : Utils.lightGrey)
+                              )
+                            ],
+                          ),
+                        ))
+                      );
                       return SizedBox(
                         width: 100,
                         child: Column(
@@ -123,7 +169,7 @@ class _BadgeTrackerTimelineState extends State<BadgeTrackerTimeline> with Single
                                 begin: 0.0,
                                 end: 1.0
                               ).animate(CurvedAnimation(
-                                parent: stepCircleCtrl, 
+                                parent: stepCircleCtrl,
                                 curve: Interval(interval * (index), (interval * (index + 1)) - 0.05, curve: Curves.easeInOut)
                                 )
                               ),
@@ -153,7 +199,7 @@ class _BadgeTrackerTimelineState extends State<BadgeTrackerTimeline> with Single
                       );
                     }),
                   ),
-                  
+
                 ],
               ),
             ),

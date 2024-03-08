@@ -2,122 +2,128 @@
     "campaign": "Professional Cloud Architect 2024",
     "community": "GDG St. Louis",
     "link": "https://gdg.community.dev/gdg-st-louis/",
-    "badgesEndpoint": "https://us-central1-devfestl.cloudfunctions.net/badge-tracker",
+    "badgesEndpoint": "https://us-central1-devfestl.cloudfunctions.net/badge-tracker-2",
     "sessions": [
         {
             "index": 0,
-            "isSelected": false,
+            "event": "https://gdg.community.dev/events/details/google-gdg-st-louis-presents-study-group-professional-cloud-architect-certification-2024-03-07/cohost-gdg-st-louis",
+            "isSelected": true,
             "isComplete": false,
-            "date": "2024-03-03T00:00:00Z",
+            "date": "2024-03-07T00:00:00Z",
             "badges": [
                 {
                     "badgeTitle": "Preparing for your Professional Cloud Architect Journey",
                     "link": "https://www.cloudskillsboost.google/course_templates/78",
-                    "isComplete": false
-                },
-                {
-                    "badgeTitle": "Google Cloud Fundamentals: Core Infrastructure",
-                    "link": "https://www.cloudskillsboost.google/course_templates/60",
-                    "isComplete": false
-                },
-                {
-                    "badgeTitle": "Perform Foundational Data, ML, and AI Tasks in Google Cloud",
-                    "link": "https://www.cloudskillsboost.google/quests/117",
                     "isComplete": false
                 }
             ]
         },
         {
             "index": 1,
+            "event": "https://gdg.community.dev/events/details/google-gdg-st-louis-presents-study-group-professional-cloud-architect-certification-2024-03-14/cohost-gdg-st-louis",
             "isSelected": false,
             "isComplete": false,
-            "date": "2023-06-22T00:00:00Z",
+            "date": "2024-03-14T00:00:00Z",
             "badges": [
                 {
-                    "badgeTitle": "Launching into Machine Learning",
-                    "link": "https://www.cloudskillsboost.google/course_templates/8",
+                    "badgeTitle": "Google Cloud Fundamentals: Core Infrastructure",
+                    "link": "https://www.cloudskillsboost.google/paths/12/course_templates/60",
                     "isComplete": false
                 },
-              {
-                "badgeTitle": "TensorFlow on Google Cloud",
-                "link": "https://www.cloudskillsboost.google/course_templates/12",
-                "isComplete": false
-              }
+                {
+                    "badgeTitle": "Essential Google Cloud Infrastructure: Foundation",
+                    "link": "https://www.cloudskillsboost.google/course_templates/50",
+                    "isComplete": false
+                }
             ]
         },
         {
             "index": 2,
             "isSelected": false,
-            "date": "2023-07-06T00:00:00Z",
+            "event": "https://gdg.community.dev/events/details/google-gdg-st-louis-presents-study-group-professional-cloud-architect-certification-2024-03-21/cohost-gdg-st-louis",
+            "date": "2024-03-21T00:00:00Z",
             "isComplete": false,
             "badges": [
                 {
-                    "badgeTitle": "Feature Engineering",
-                    "link": "https://www.cloudskillsboost.google/course_templates/11",
+                    "badgeTitle": "Essential Google Cloud Infrastructure: Core Services",
+                    "link": "https://www.cloudskillsboost.google/course_templates/49",
                     "isComplete": false
                 },
                 {
-                    "badgeTitle": "Machine Learning in the Enterprise",
-                    "link": "https://www.cloudskillsboost.google/course_templates/9",
+                    "badgeTitle": "Elastic Google Cloud Infrastructure: Scaling and Automation",
+                    "link": "https://www.cloudskillsboost.google/course_templates/178",
+                    "isComplete": false
+                },
+                {
+                    "badgeTitle": "Reliable Google Cloud Infrastructure: Design and Process",
+                    "link": "https://www.cloudskillsboost.google/course_templates/41",
                     "isComplete": false
                 }
             ]
         },
         {
             "index": 3,
+            "event": "https://gdg.community.dev/events/details/google-gdg-st-louis-presents-study-group-professional-cloud-architect-certification-2024-03-28/cohost-gdg-st-louis",
             "isSelected": false,
-            "date": "2023-07-20T00:00:00Z",
+            "date": "2024-03-28T00:00:00Z",
             "isComplete": false,
             "badges": [
                 {
-                    "badgeTitle": "Production Machine Learning Systems",
-                    "link": "https://www.cloudskillsboost.google/course_templates/17",
+                    "badgeTitle": "Getting Started with Google Kubernetes Engine",
+                    "link": "https://www.cloudskillsboost.google/course_templates/2",
                     "isComplete": false
                 },
                 {
-                    "badgeTitle": "Computer Vision Fundamentals with Google Cloud",
-                    "link": "https://www.cloudskillsboost.google/course_templates/18",
+                    "badgeTitle": "Logging and Monitoring in Google Cloud",
+                    "link": "https://www.cloudskillsboost.google/course_templates/99",
+                    "isComplete": false
+                },
+                {
+                    "badgeTitle": "Create and Manage Cloud Resources",
+                    "link": "https://www.cloudskillsboost.google/paths/12/course_templates/648",
                     "isComplete": false
                 }
             ]
         },
         {
             "index": 4,
+            "event": "https://gdg.community.dev/events/details/google-gdg-st-louis-presents-study-group-professional-cloud-architect-certification-2024-04-04/cohost-gdg-st-louis",
             "isSelected": false,
-            "date": "2023-08-03T00:00:00Z",
+            "date": "2024-04-04T00:00:00Z",
             "isComplete": false,
             "badges": [
                 {
-                    "badgeTitle": "Natural Language Processing on Google Cloud",
-                    "link": "https://www.cloudskillsboost.google/course_templates/40",
+                    "badgeTitle": "Perform Foundational Infrastructure Tasks in Google Cloud",
+                    "link": "https://www.cloudskillsboost.google/paths/12/course_templates/637",
                     "isComplete": false
                 },
                 {
-                    "badgeTitle": "Recommendation Systems on Google Cloud",
-                    "link": "https://www.cloudskillsboost.google/course_templates/39",
+                    "badgeTitle": "Set Up and Configure a Cloud Environment in Google Cloud",
+                    "link": "https://www.cloudskillsboost.google/course_templates/625",
                     "isComplete": false
                 },
                 {
-                    "badgeTitle": "Build and Deploy Machine Learning Solutions on Vertex AI",
-                    "link": "https://www.cloudskillsboost.google/quests/183",
+                    "badgeTitle": "Automating Infrastructure on Google Cloud with Terraform",
+                    "link": "https://www.cloudskillsboost.google/paths/12/course_templates/636",
                     "isComplete": false
                 }
             ]
         },
         {
             "index": 5,
+            "event": "https://gdg.community.dev/events/details/google-gdg-st-louis-presents-study-group-professional-cloud-architect-certification-2024-04-11/cohost-gdg-st-louis",
             "isSelected": false,
-            "date": "2023-08-17T00:00:00Z",
+            "date": "2024-04-11T00:00:00Z",
             "isComplete": false,
             "badges": [
                 {
-                    "badgeTitle": "Machine Learning Operations (MLOps): Getting Started",
-                    "link": "https://www.cloudskillsboost.google/course_templates/158",
+                    "badgeTitle": "Optimize Costs for Google Kubernetes Engine",
+                    "link": "https://www.cloudskillsboost.google/paths/12/course_templates/655",
                     "isComplete": false
                 },
                 {
-                    "badgeTitle": "ML Pipelines on Google Cloud",
-                    "link": "https://www.cloudskillsboost.google/course_templates/191",
+                    "badgeTitle": "Cloud Architecture: Design, Implement, and Manage",
+                    "link": "https://www.cloudskillsboost.google/paths/12/course_templates/640",
                     "isComplete": false
                 }
             ]

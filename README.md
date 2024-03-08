@@ -56,15 +56,44 @@ from bs4 import BeautifulSoup
 
 profile_urls = [
 'https://www.cloudskillsboost.google/public_profiles/e8aeb016-c0b6-458a-be24-9906dc5c5ab4', # mim
-
-'https://www.cloudskillsboost.google/public_profiles/13d2fc34-8aff-44b4-adcc-77032ccf8cb2',
-'https://www.cloudskillsboost.google/public_profiles/e770c4c3-5a42-495c-80cf-f9db5b4371e4',
-'https://www.cloudskillsboost.google/public_profiles/1978d95d-b6af-4a61-9961-761e2f7cd45f',
-'https://www.cloudskillsboost.google/public_profiles/82344445-515c-44f0-86ae-68d8d000e328',
+'https://www.cloudskillsboost.google/public_profiles/91244438-09d1-4e84-b2c6-9242e1b6bf50', # Pradip
+'https://www.cloudskillsboost.google/public_profiles/09b365b9-ef07-4bdd-86a5-487ecf0c78b2', # Jim
+'https://www.cloudskillsboost.google/public_profiles/716fb9ce-84e8-4bae-a179-4c5c257a05f7', # Jarvis
+'https://www.cloudskillsboost.google/public_profiles/2ba30c5a-1713-4bc1-a2dd-96f2e9aadf8c', # Subhankar
+'https://www.cloudskillsboost.google/public_profiles/ccad9a50-9172-44f1-9a44-45938fdba1db', # Meredith
+'https://www.cloudskillsboost.google/public_profiles/40457fa1-92c0-4ca2-b594-ff28a4e3e3a1', # Spyros
+'https://www.cloudskillsboost.google/public_profiles/62d17757-58cf-4f0d-a8ae-9f1efeba710d', # Vendim
+'https://www.cloudskillsboost.google/public_profiles/9badc950-6d7c-460d-b0b8-0e7cf163259f', # Waleed
+'https://www.cloudskillsboost.google/public_profiles/457bb0ec-bd80-4858-9092-82adcbfa2213', # Bunmi
+'https://www.cloudskillsboost.google/public_profiles/a6826ad7-973b-4ea8-a41f-69241639ec77', # Raghu
+'https://www.cloudskillsboost.google/public_profiles/2ba8a52c-922e-4816-90dc-afd0ab8e6491', # Soya
+'https://www.cloudskillsboost.google/public_profiles/78a1526b-2246-499a-8c2c-b80c261cac83', # Sameena
+'https://www.cloudskillsboost.google/public_profiles/a785f885-323f-495e-9cdc-b03c1ec3ca12', # TC
+'https://www.cloudskillsboost.google/public_profiles/0a9beebb-fe0a-4b6e-a5f0-1a62284dfa11', # Anthony
+'https://www.cloudskillsboost.google/public_profiles/89142336-f04c-4bcd-851d-374194223a81', # Elizabeth
+'https://www.cloudskillsboost.google/public_profiles/8620a09c-47e8-4202-88f5-4b79ec48f7a1', # Nicholas
+'https://www.cloudskillsboost.google/public_profiles/095bb4c2-b024-48c8-9fd0-1983660816a5', # Emannuel
+'https://www.cloudskillsboost.google/public_profiles/4e7c3950-26fd-4b98-a733-17ced6a26b87' # Raphael
 ]
 
 @functions_framework.http
 def get_badges(request):
+
+    # Set CORS headers for the preflight request .. https://cloud.google.com/functions/docs/samples/functions-http-cors#functions_http_cors-python
+    if request.method == "OPTIONS":
+        # Allows GET requests from any origin with the Content-Type
+        # header and caches preflight response for an 3600s
+        headers = {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET",
+            "Access-Control-Allow-Headers": "Content-Type",
+            "Access-Control-Max-Age": "3600",
+        }
+
+        return ("", 204, headers)
+
+    # Set CORS headers for the main request
+    headers = {"Access-Control-Allow-Origin": "*"}
 
     payload = []
 
