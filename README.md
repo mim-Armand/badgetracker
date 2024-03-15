@@ -73,7 +73,14 @@ profile_urls = [
 'https://www.cloudskillsboost.google/public_profiles/89142336-f04c-4bcd-851d-374194223a81', # Elizabeth
 'https://www.cloudskillsboost.google/public_profiles/8620a09c-47e8-4202-88f5-4b79ec48f7a1', # Nicholas
 'https://www.cloudskillsboost.google/public_profiles/095bb4c2-b024-48c8-9fd0-1983660816a5', # Emannuel
-'https://www.cloudskillsboost.google/public_profiles/4e7c3950-26fd-4b98-a733-17ced6a26b87' # Raphael
+'https://www.cloudskillsboost.google/public_profiles/4e7c3950-26fd-4b98-a733-17ced6a26b87', # Raphael
+'https://www.cloudskillsboost.google/public_profiles/4f110f87-44bd-4518-87d8-02a1c843c8de', # Rajaseelan
+'https://www.cloudskillsboost.google/public_profiles/ec8c6312-659a-4a40-ba72-2fb02f23c9bb', # Pyush
+'https://www.cloudskillsboost.google/public_profiles/c36f1428-64b1-4879-84af-9f60d28ad74d', # Moses Lucien
+'https://www.cloudskillsboost.google/public_profiles/4f110f87-44bd-4518-87d8-02a1c843c8de', # Rajaseelan Ganeswaran
+'https://www.cloudskillsboost.google/public_profiles/753f48dc-4838-4f6b-8e19-c9e296bd1920', # Kate
+'https://www.cloudskillsboost.google/public_profiles/80a40133-0a26-47c0-bfaa-3b9fe458d62c', # Prince Maxwell
+'https://www.cloudskillsboost.google/public_profiles/2da2d442-e469-45c9-ae17-58943ae98ae7' # Felipe Alencar
 ]
 
 @functions_framework.http

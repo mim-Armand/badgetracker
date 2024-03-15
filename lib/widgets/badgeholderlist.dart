@@ -46,7 +46,7 @@ class _BadgeHolderListState extends State<BadgeHolderList> with SingleTickerProv
                 )
               ),
               const SizedBox(width: 5),
-              const Text('Future\nGoogle Certified\nCloud Engineers',
+              const Text('Future\nGoogle Certified\nCloud Architects',
                 style: TextStyle(color: Utils.mainYellow)
               )
             ]
@@ -60,13 +60,13 @@ class _BadgeHolderListState extends State<BadgeHolderList> with SingleTickerProv
             position: Tween<Offset>(
               begin: const Offset(-0.25, 0.0),
               end: const Offset(0.0, 0.0)
-            ).animate(CurvedAnimation(parent: rowAnim, 
+            ).animate(CurvedAnimation(parent: rowAnim,
               curve: Interval(index * rowDuration, (index + 1) * rowDuration, curve: Curves.easeInOut))
             ),
             child: FadeTransition(
               opacity: Tween<double>(begin: 0.0, end: 1.0)
               .animate(CurvedAnimation(
-                parent: rowAnim, 
+                parent: rowAnim,
                 curve: Interval(index * rowDuration, (index + 1) * rowDuration, curve: Curves.easeInOut)
                 )
               ),
